@@ -96,6 +96,12 @@ main > section{
     font-size: 2.81rem;
     color: #727272;
 }
+/* left side a border dewar jonno */
+#features-border{
+    border-left: 5px solid #FF900E;
+    padding-left: 20px;
+    
+}
 #Our{
     font-weight: bold;
     font-size: 2.81rem;
@@ -105,11 +111,141 @@ main > section{
      font-weight: bold;
     font-size: 2.81rem;
     color: #FF900E;
+    
 }
+
+
+.section-title{
+        font-weight: bold;
+    font-size: 2.81rem;
+     color: #131313;
+}
+/* card er part eigula */
+.featuress{
+    gap: 130px;
+}
+.feature-card{
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.06);
+    margin-bottom: 20px;
+}
+/* box er moddha j desktop likha ta acha oitar jonno margin dite hba */
+.feature-card, .feature-card-title{
+    font-weight: 500;
+    font-size: 1.25rem;
+   color: #131313;
+   margin-top: 0px;
+   margin-bottom: 0px;
+}
+
+/* 10 years er button a padding acha tai button er moddha id diche */
+#experience-badge{
+    padding: 45px 42px ;
+    margin-left: -100px;
+    margin-top: -100px;
+}
+#year{
+    font-weight: bold;
+    font-size: 4rem;
+    color: #FFFFFF;
+}
+.featured-architect img{
+    width: 100%;
+
+}
+#experience{
+    font-weight: 500px;
+    font-size: 1.56rem;
+    color: #FFFFFF;
+}
+/* some facts */
+
+.facts-container{
+   display: grid;
+   grid-template-columns:repeat(4, 1fr) ;
+   gap: 124px;
+
+}
+/* some facts er moddh aj card acha seigular moddha gap dewar jonno width,height use korchi tar jonno alada gap tag use korte hoy ni */
+.fact-card{
+    border: 1px solid #FF900E;
+    width: 240px;
+    height: 240px;
+    border-radius: 8px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 45px 36px;
+    margin-top: 100px;
+    
+}
+.fact-number{
+    font-weight: 500px;
+    font-size: 2.81rem;
+    color: #424242;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+.fact-name{
+    font-weight: 500px;
+    font-size: 1.25rem;
+    color: #727272;
+    margin-top: 10px;
+}
+.sponsors-info{
+    max-width:540px;
+    margin: 50px auto;
+    text-align: center;
+}
+.sponsors-img{
+   display: grid;
+   grid-template-columns: repeat(5, 1fr);
+   filter: grayscale(100%);
+}
+.footer{
+    max-width: 1440px;
+    height: 100px;
+    margin: 130px auto;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    font-weight: 500px;
+    font-size: 1.25rem;
+    color: #424242;
+
+}
+
 /* responsive media query */
 @media screen and (max-width: 576px){
    .navbar, 
-   .nav-links{
+   .nav-links,
+   .teams,
+   .featuress{
     flex-direction: column;
    }
+   .team-img-container,.facts-container, .sponsors-img{
+    grid-template-columns: repeat(1, 1fr);
+   }
+   .facts-container, .sponsors-img{
+    justify-content: center;
+    gap: 20px;
+   }
+
+   /* ei part ta mn a rakhte hba karon responsive er balay margin negative rakha jabe na */
+   #experience-badge{
+    margin-top: 20px;
+    margin-left: 20px;
+   }
+   
+}
+/* media size device */
+@media screen and (min-width: 576px) and (max-width: 992px) {
+    .teams{
+        flex-direction: column;
+    }
+    .our-features{
+        margin: 50px auto;
+    }
 }
